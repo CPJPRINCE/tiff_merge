@@ -2,16 +2,16 @@ import os
 import pandas as pd
 import shutil
 from pathlib import Path
-from wand.image import Image as wi
-from wand.resource import limits
+#from wand.image import Image as wi
+#from wand.resource import limits
 from glob import glob
 import tifftools as tt
 
-limits['memory'] = 1024 * 1024 * 4096
+#limits['memory'] = 1024 * 1024 * 4096
 
-dir = r'E:\HD039 Townsweb\Remodel\LBL'
-spread = 'SDCListing-File_Update_v1.1.xlsm'
-ndir = r"E:\HD039 Townsweb\Remodel\NewLBL"
+dir = r'D:\HD039 Townsweb\Unilever Batch Data - Drive 2\Unilever Leverhulme  Batch 3\Tiff'
+#spread = 'SDCListing-File_Update_v1.1.xlsm'
+ndir = r"D:\HD039 Townsweb\Remodel\NewLBC"
 
 #tab = 'Manual'
 #xlfile = pd.ExcelFile(spread)
@@ -126,3 +126,5 @@ listdirs(dir)
 #print(listP)
 #print(listA)
 #RebundleXL()
+
+print('Done!')
